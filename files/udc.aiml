@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>HELLO</pattern>
+        <template><random>
+            <li>Hello...</li>
+            <li>Hello, how are you??</li>
+            <li>Hi</li>
+            <li>Good to see you..</li>
+            <li>Hello there</li>
+            <li>Whats the craig?</li>
+            <li>Hi, how are you??</li>
+        </random></template>
+    </category>
+    <category>
+        <pattern>HI</pattern>
+        <template><random>
+            <li>Hello...</li>
+            <li>Hello, how are you??</li>
+            <li>Hi</li>
+            <li>Good to see you..</li>
+            <li>Hello there</li>
+            <li>Whats the craig?</li>
+            <li>Hi, how are you??</li>
+        </random></template>
+    </category>
+    <category>
+        <pattern>HELLO *</pattern>
+        <template><random>
+            <li>Hello...</li>
+            <li>Hello, how are you??</li>
+            <li>Hi</li>
+            <li>Good to see you..</li>
+            <li>Hello there</li>
+            <li>Whats the craig?</li>
+            <li>Hi, how are you??</li>
+        </random></template>
+    </category>
+    <category>
+        <pattern>HI *</pattern>
+        <template><random>
+            <li>Hello...</li>
+            <li>Hello, how are you??</li>
+            <li>Hi</li>
+            <li>Good to see you..</li>
+            <li>Hello there</li>
+            <li>Whats the craig?</li>
+            <li>Hi, how are you??</li>
+        </random></template>
+    </category>
+    <category>
+        <pattern>HOW ARE YOU *</pattern>
+        <template><random>
+            <li>I am fine, how are you?</li>
+            <li>Great, thank you..</li>
+            <li>I am happy to see you, what about you?</li>
+            <li>Always busy, how are you?</li>
+            <li>What a great day, how are you?</li>
+            <li>Whats the craig?</li>
+            <li>Hi, how are you??</li>
+        </random></template>
+    </category>
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template><random>
+            <li>I am fine, how are you?</li>
+            <li>Great, thank you..</li>
+            <li>I am happy to see you, what about you?</li>
+            <li>Always busy, how are you?</li>
+            <li>What a great day, how are you?</li>
+            <li>Whats the craig?</li>
+            <li>Hi, how are you??</li>
+        </random></template>
+    </category>    
+    
+    <category>
+        <pattern>BOT SAY *</pattern>
+        <template><random>
+            <li><star index="1"></star></li>
+            <li>I am not going to say that ...</li>
+            <li><star index="1"></star></li>
+            <li>I am not going to say that ...</li>
+        </random></template>
+    </category>    
+    <category>
+        <pattern>SAY *</pattern>
+        <template><random>
+            <li><star index="1"></star></li>
+            <li>I am not going to say that ...</li>
+            <li><star index="1"></star></li>
+            <li>I am not going to say that ...</li>
+        </random></template>
+    </category>
+    <category>
+        <pattern>MY NAME IS * </pattern>
+        <template>Hello <set name="firstname" ><star index="1"/></set>, how are you???</template>
+    </category>    
+    <category>
+        <pattern>MY NAME IS * *</pattern>
+        <template>Hello <set name="firstname" ><star index="1"/></set> <set name="lastname"><star index="2"/></set>, how are you???</template>
+    </category>
+    <category>
+        <pattern>WHAT IS MY NAME</pattern>
+        <template>Your name is <get name="firstname"/></template>
+    </category>
+    <category>
+        <pattern>WHAT IS MY LAST NAME</pattern>
+        <template>Your last name is <get name="lastname"/></template>
+    </category>
+    <category>
+        <pattern>WHAT IS MY LASTNAME</pattern>
+        <template>Your lastname is <get name="lastname"/></template>
+    </category>    
+    <category>
+        <pattern>WHAT IS MY FULL NAME</pattern>
+        <template>Your full name is <get name="firstname"/> <get name="lastname"/></template>
+    </category>
+    <category>
+        <pattern>I would like to go on holidays</pattern>
+        <template><random>
+            <li>Ah thats great where would you like to go?</li>
+            <li>ok Where to??</li>
+            <li>Where are you going to?</li>
+            <li>Where is the best place to go</li>
+            <li>Where to??</li>
+        </random> 
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I would like to go for holidays</pattern>
+        <template><random>
+            <li>Ah thats great where would you like to go?</li>
+            <li>ok Where to??</li>
+            <li>Where are you going to?</li>
+            <li>Where is the best place to go</li>
+            <li>Where to??</li>
+        </random></template>
+    </category>
+    <category>
+        <pattern>Im going for vacation</pattern>
+        <template><random>
+            <li>Ah thats great where would you like to go?</li>
+            <li>ok Where to??</li>
+            <li>Where are you going to?</li>
+            <li>Where is the best place to go</li>
+            <li>Where to??</li>
+        </random></template>
+    </category>
+    
+    <category>
+        <pattern>I AM GOING TO *</pattern>
+        <template>
+
+                I love <star index="1"></star>.
+
+            <learn>
+                <category>
+                    <patern>WHERE AM I GOING TO</patern>
+                    <template>
+                        You told me you are going to <star index = "1"/>.
+                    </template>
+                </category>
+            </learn>        
+        </template>
+    </category>
+    
+    
+    
+</aiml>
